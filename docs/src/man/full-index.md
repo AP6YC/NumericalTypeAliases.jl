@@ -1,18 +1,9 @@
 # [Index](@id main-index)
 
 This page lists the core methods and types of the `NumericalTypeAliases.jl` package.
-The [Methods](@ref index-methods) section lists the public methods for the package that use the modules in [Types](@ref index-types).
+The [Types](@ref index-types) section contains all type aliases, abstract and concrete.
+The [Constants](@ref index-constants) section also has some constant utility variables associated with the package.
 Each of these entries link to the docstrings in the [Docs](@ref index-docs) section.
-
-ART modules document their internal working parameters and references, while their hyperparameters/options are documented under their corresponding option structs `opts_...`.
-
-## [Methods](@id index-methods)
-
-```@index
-Modules = [NumericalTypeAliases]
-Order = [:function]
-Public = true
-```
 
 ## [Types](@id index-types)
 
@@ -22,8 +13,25 @@ Order = [:type]
 Public = true
 ```
 
+## [Constants](@id index-constants)
+
+```@index
+Modules = [NumericalTypeAliases]
+Order = [:constant]
+Public = true
+```
+
 ## [Docs](@id index-docs)
 
 ```@docs
 NumericalTypeAliases
+RealArray
+RealVector
+RealMatrix
+IntegerArray
+IntegerVector
+IntegerMatrix
+RealFP
+Float
+NTA_VERSION
 ```

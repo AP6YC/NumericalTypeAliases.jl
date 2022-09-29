@@ -13,6 +13,11 @@ Credits:
 
 using Pkg
 
+"""
+    NTA_VERSION
+
+A constant that contains the version of the installed NumericalTypeAliases.jl package.
+"""
 const NTA_VERSION = VersionNumber(
     Pkg.TOML.parsefile(joinpath(dirname(@__DIR__), "Project.toml"))["version"]
 )

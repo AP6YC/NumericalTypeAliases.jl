@@ -4,7 +4,7 @@ using NumericalTypeAliases
 
 # Make the documentation
 makedocs(
-    modules=[OptimalEstimation],
+    modules=[NumericalTypeAliases],
     format=Documenter.HTML(
         prettyurls = get(ENV, "CI", nothing) == "true",
     ),

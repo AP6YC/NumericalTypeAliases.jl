@@ -94,6 +94,7 @@ OptimalEstimation
 ├── LICENSE                 // Doc: the license to the project.
 ├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
 └── README.md               // Doc: this document.
+```
 
 ### Optimal Estimation Module Workflow
 

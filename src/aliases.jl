@@ -22,18 +22,62 @@ This defines a set of aliases that specify if:
 # covariant type notation, i.e. AbstractVector{<:Real}
 
 # Real-numbered aliases
+"""
+    RealArray{T<:Real, N} = AbstractArray{T, N}
+
+Abstract type for N-dimensional array of real, non-integered values.
+"""
 const RealArray{T<:Real, N} = AbstractArray{T, N}
+
+"""
+    RealVector{T<:Real} = AbstractArray{T, 1}
+
+Abstract type for 1-D vector of real, non-integered values.
+"""
 const RealVector{T<:Real} = AbstractArray{T, 1}
+
+"""
+    RealMatrix{T<:Real} = AbstractArray{T, 2}
+
+Abstract type for 2-D matrix of real, non-integered values.
+"""
 const RealMatrix{T<:Real} = AbstractArray{T, 2}
 
 # Integered aliases
+"""
+    IntegerArray{T<:Integer, N} = AbstractArray{T, N}
+
+Abstract type for N-dimensional array of whole-numbered integers.
+"""
 const IntegerArray{T<:Integer, N} = AbstractArray{T, N}
+
+"""
+    IntegerVector{T<:Integer} = AbstractArray{T, 1}
+
+Abstract type for 1-D vector of whole-numbered integers.
+"""
 const IntegerVector{T<:Integer} = AbstractArray{T, 1}
+
+"""
+    IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
+
+Abstract type for 2-D matrix of whole-numbered integers.
+"""
 const IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
 
 # Specifically floating-point aliases
 # const RealFP = Union{Float32, Float64}
+"""
+    RealFP = AbstractFloat
+
+Abstract type for a real floating-point number.
+"""
 const RealFP = AbstractFloat
 
 # System's largest native floating point variable
+"""
+    Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)
+
+Concrete type for the largest available floating point value (not BigFloat).
+"""
 const Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)

@@ -1,6 +1,6 @@
 # Package Guide
 
-The `NumericalTypeAliases.jl` package
+The use the `NumericalTypeAliases.jl` package, you should know:
 
 - [How to install the package](@ref installation)
 - [Usage basics](@ref usage)
