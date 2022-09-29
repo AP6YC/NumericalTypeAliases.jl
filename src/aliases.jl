@@ -32,7 +32,8 @@ const IntegerVector{T<:Integer} = AbstractArray{T, 1}
 const IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
 
 # Specifically floating-point aliases
-const RealFP = Union{Float32, Float64}
+# const RealFP = Union{Float32, Float64}
+const RealFP = AbstractFloat
 
 # System's largest native floating point variable
 const Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)

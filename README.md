@@ -8,6 +8,7 @@ Please read the [documentation](https://ap6yc.github.io/NumericalTypeAliases.jl/
   - [Overview](#overview)
   - [Installation](#installation)
   - [Quickstart](#quickstart)
+  - [Aliases](#aliases)
   - [Structure](#structure)
   - [Contributing](#contributing)
   - [History](#history)
@@ -17,7 +18,9 @@ Please read the [documentation](https://ap6yc.github.io/NumericalTypeAliases.jl/
 
 ## Overview
 
-TODO
+The purpose of this package is to define a set of commonly used aliases in numerical algorithms when it is known that an input vector or matrix should have an element type of floating-point or integer.
+
+This package was inspired by the blurb in `StatsBase.jl` that defined a set of type aliases to serve this very purpose.
 
 ## Installation
 
@@ -49,7 +52,64 @@ After installation, load the module with
 using NumericalTypeAliases
 ```
 
-TODO
+Then, you can define your functions with these type aliases.
+For example, say that you have a function that accepts only real-valued vectors because integer don't make sense in your specific situation:
+
+```julia
+function my_real_func(input::RealVector)
+    # Do some math on a 1D vector with floats.
+end
+```
+
+Or say that you know that you need a function to operate on an array with a list of indices.
+You know that floats don't make sense for indexing, so you would write with `IntegerVector`:
+
+```julia
+function my_indexer(data::RealMatrix, indices::IntegerVector)
+    for ix in eachindex(indices)
+        println(data[ix, :])
+    end
+end
+```
+
+Furthermore, if you know that you need a real-valued number but want your package to still support 32-bit systems, you wouldn't hardcode `Float64` everywhere like usual.
+Instead, you could write with the abstract type `RealFP` (which is just an alias for `AbstractFloat`):
+
+```julia
+function my_float_func(datum::RealFP)
+    # Do math with a real-valued floating point variable
+end
+```
+
+As a bonus, say that you want to specify a hardcoded type within a struct as a float, but you don't want to write Float64 or Float32.
+In the same way that the Julia Base defines an `Int` as the largest integer on your system, you can define a variable to be of the larget native floating point variable on your system depending on the system word size with `Float`:
+
+```julia
+# Make a struct that will compile with the largest available float size
+struct MyStruct
+    cool_variable::Float
+end
+
+# Make a cool struct
+MyStruct(3.14)
+```
+
+**NOTE** `RealFP` is the abstract type, and `Float` is the concrete type.
+This is just like in base Julia where `Integer` is the abstract type, and `Int` is the concrete type.
+
+## Aliases
+
+The aliases exported in this package are:
+
+- RealArray
+- RealVector
+- RealMatrix
+- IntegerArray
+- IntegerVector
+- IntegerMatrix
+- RealFP
+- Float
+- NTA_VERSION
 
 ## Structure
 
