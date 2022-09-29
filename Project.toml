@@ -1,0 +1,4 @@
+name = "NumericalTypeAliases"
+uuid = "be9b823e-291e-41a1-b8ce-806204e78f92"
+authors = ["Sasha Petrenko <sap625@umsystem.edu>"]
+version = "0.1.0"
