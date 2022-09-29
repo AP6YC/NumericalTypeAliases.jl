@@ -81,3 +81,27 @@ const RealFP = AbstractFloat
 Concrete type for the largest available floating point value (not BigFloat).
 """
 const Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)
+
+"""
+    NTA_CONCRETE_TYPES
+
+A list of NumericalTypeAliases' concrete types.
+"""
+const NTA_CONCRETE_TYPES = [
+    Float
+]
+
+"""
+    NTA_ABSTRACT_TYPES
+
+A list of NumericalTypeAliases' abstract types
+"""
+const NTA_ABSTRACT_TYPES = [
+    RealArray
+    RealVector
+    RealMatrix
+    IntegerArray
+    IntegerVector
+    IntegerMatrix
+    RealFP
+]

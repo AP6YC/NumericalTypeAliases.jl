@@ -37,6 +37,8 @@ export
     IntegerMatrix,
     RealFP,
     Float,
-    NTA_VERSION
+    NTA_VERSION,
+    NTA_ABSTRACT_TYPES,
+    NTA_CONCRETE_TYPES
 
 end # module NumericalTypeAliases
