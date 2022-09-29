@@ -2,7 +2,12 @@
 
 A collection of type aliases restricting to numerical for multiple dispatch.
 
-Please read the [documentation](https://ap6yc.github.io/NumericalTypeAliases.jl/dev/) for detailed usage and tutorials.
+Please read the [documentation][default-docs-url] for detailed usage and tutorials.
+
+[issues-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/issues
+[contrib-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/man/contributing/
+[default-docs-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/
+
 
 - [NumericalTypeAliases](#numericaltypealiases)
   - [Overview](#overview)
