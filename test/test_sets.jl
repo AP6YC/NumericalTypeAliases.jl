@@ -15,8 +15,7 @@ end
 
 @testset "Types" begin
 
-    @info "------- SYSTEM WORD SIZE -------"
-    @info Sys.WORD_SIZE
+    @info "System word size: $(Sys.WORD_SIZE)"
 
     # Test that the real types work as expected
     @test ones(2) isa RealVector
@@ -30,6 +29,7 @@ end
 
     # Test that the floats work
     local_float = 1.5
+    @info "Type of float: $(typeof(local_float))"
     @test local_float isa RealFP    # Abstract
     @test local_float isa Float     # Concrete
 
