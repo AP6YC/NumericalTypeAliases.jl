@@ -66,21 +66,25 @@ Abstract type for 2-D matrix of whole-numbered integers.
 const IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
 
 # Specifically floating-point aliases
-# const RealFP = Union{Float32, Float64}
 """
     RealFP = AbstractFloat
 
 Abstract type for a real floating-point number.
+This definition is provided for naming consistency in the package despite being equivalent to an AbstractFloat.
 """
 const RealFP = AbstractFloat
 
 # System's largest native floating point variable
 """
-    Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)
+    Float
 
-Concrete type for the largest available floating point value (not BigFloat).
+Concrete type for the default available floating point value.
+This is likely Float64 on most systems.
+
+Because a Float64 in Julia is the equivalent of a double in other languages (while Float32 is a float), this has the possibility to be confusing depending on the context.
+Use carefully.
 """
-const Float = (Sys.WORD_SIZE == 64 ? Float64 : Float32)
+const Float = typeof(0.0)
 
 """
     NTA_CONCRETE_TYPES
@@ -94,7 +98,7 @@ const NTA_CONCRETE_TYPES = [
 """
     NTA_ABSTRACT_TYPES
 
-A list of NumericalTypeAliases' abstract types
+A list of NumericalTypeAliases' abstract types.
 """
 const NTA_ABSTRACT_TYPES = [
     RealArray
