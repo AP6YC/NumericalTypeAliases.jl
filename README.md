@@ -2,12 +2,54 @@
 
 A collection of type aliases restricting to numerical for multiple dispatch.
 
-Please read the [documentation][default-docs-url] for detailed usage and tutorials.
+Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
+
+| **Stable Docs**  | **Dev Docs** | **Testing Status** | **Coverage** |
+|:----------------:|:------------:|:----------------:|:------------:|
+| [![Stable][docs-stable-img]][docs-stable-url] | [![Dev][docs-dev-img]][docs-dev-url]| [![Build Status][ci-img]][ci-url] | [![Codecov][codecov-img]][codecov-url] |
+| **Docs Build** | **JuliaHub Status** | **Dependents** | **Release** |
+| [![Documentation][doc-status-img]][doc-status-url] | [![pkgeval][pkgeval-img]][pkgeval-url] | [![deps][deps-img]][deps-url] | [![version][version-img]][version-url] |
+
+| **Zenodo DOI** |
+| :------------: |
+| [![DOI][zenodo-img]][zenodo-url] |
+
+[zenodo-img]: https://zenodo.org/badge/DOI/10.5281/zenodo.5748453.svg
+[zenodo-url]: https://doi.org/10.5281/zenodo.5748453
+
+[doc-status-img]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml/badge.svg
+[doc-status-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml
+
+[deps-img]: https://juliahub.com/docs/NumericalTypeAliases/deps.svg
+[deps-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We?t=2
+
+[version-img]: https://juliahub.com/docs/NumericalTypeAliases/version.svg
+[version-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We
+
+[pkgeval-img]: https://juliahub.com/docs/NumericalTypeAliases/pkgeval.svg
+[pkgeval-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We
+
+[docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
+[docs-stable-url]: https://AP6YC.github.io/NumericalTypeAliases.jl/stable
+
+[docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
+[docs-dev-url]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev
+
+[ci-img]: https://github.com/AP6YC/NumericalTypeAliases.jl/workflows/CI/badge.svg
+[ci-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions?query=workflow%3ACI
+
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/AP6YC/NumericalTypeAliases.jl?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/AP6YC/NumericalTypeAliases-jl
+
+[codecov-img]: https://codecov.io/gh/AP6YC/NumericalTypeAliases.jl/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/AP6YC/NumericalTypeAliases.jl
+
+[coveralls-img]: https://coveralls.io/repos/github/AP6YC/NumericalTypeAliases.jl/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/AP6YC/NumericalTypeAliases.jl?branch=master
+
 
 [issues-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/issues
 [contrib-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/man/contributing/
-[default-docs-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/
-
 
 - [NumericalTypeAliases](#numericaltypealiases)
   - [Overview](#overview)
