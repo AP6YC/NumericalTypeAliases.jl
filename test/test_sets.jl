@@ -16,7 +16,7 @@ end
 @testset "Types" begin
 
     @info "------- SYSTEM WORD SIZE -------"
-    @ingo Sys.WORD_SIZE
+    @info Sys.WORD_SIZE
 
     # Test that the real types work as expected
     @test ones(2) isa RealVector
