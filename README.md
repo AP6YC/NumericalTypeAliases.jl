@@ -38,15 +38,8 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 [ci-img]: https://github.com/AP6YC/NumericalTypeAliases.jl/workflows/CI/badge.svg
 [ci-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions?query=workflow%3ACI
 
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/AP6YC/NumericalTypeAliases.jl?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/AP6YC/NumericalTypeAliases-jl
-
-[codecov-img]: https://codecov.io/gh/AP6YC/NumericalTypeAliases.jl/branch/master/graph/badge.svg
+[codecov-img]: https://codecov.io/gh/AP6YC/NumericalTypeAliases.jl/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/AP6YC/NumericalTypeAliases.jl
-
-[coveralls-img]: https://coveralls.io/repos/github/AP6YC/NumericalTypeAliases.jl/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/AP6YC/NumericalTypeAliases.jl?branch=master
-
 
 [issues-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/issues
 [contrib-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/man/contributing/
