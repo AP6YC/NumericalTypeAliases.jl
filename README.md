@@ -176,7 +176,7 @@ Furthermore, the package exports some convenience variables:
 The following file tree summarizes the project structure:
 
 ```console
-ScientificTypesAliases
+NumericalTypeAliases
 ├── .github/workflows       // GitHub: workflows for testing and documentation.
 ├── docs                    // Docs: documentation for the module.
 │   └─── src                //      Documentation source files.
@@ -205,6 +205,7 @@ Patch versions are for bug fixes, minor versions are for backward-compatible cha
 ## History
 
 - 9/29/2022 - Begin project.
+- 9/30/2022 - Submit to JuliaHub
 
 ## Acknowledgements
 
