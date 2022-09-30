@@ -14,6 +14,10 @@ using Logging
 end
 
 @testset "Types" begin
+
+    @info "------- SYSTEM WORD SIZE -------"
+    @ingo Sys.WORD_SIZE
+
     # Test that the real types work as expected
     @test ones(2) isa RealVector
     @test ones(2, 2) isa RealMatrix
