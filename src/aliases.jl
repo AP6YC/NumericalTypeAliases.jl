@@ -92,7 +92,7 @@ const Float = typeof(0.0)
 A list of NumericalTypeAliases' concrete types.
 """
 const NTA_CONCRETE_TYPES = [
-    Float
+    Float,
 ]
 
 """
@@ -101,11 +101,11 @@ const NTA_CONCRETE_TYPES = [
 A list of NumericalTypeAliases' abstract types.
 """
 const NTA_ABSTRACT_TYPES = [
-    RealArray
-    RealVector
-    RealMatrix
-    IntegerArray
-    IntegerVector
-    IntegerMatrix
-    RealFP
+    RealArray,
+    RealVector,
+    RealMatrix,
+    IntegerArray,
+    IntegerVector,
+    IntegerMatrix,
+    RealFP,
 ]

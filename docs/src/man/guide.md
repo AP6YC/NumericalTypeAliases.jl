@@ -4,6 +4,7 @@ The use the `NumericalTypeAliases.jl` package, you should know:
 
 - [How to install the package](@ref installation)
 - [Usage basics](@ref usage)
+- [Types and constants](@ref types-constants)
 
 ## [Installation](@id installation)
 
@@ -80,16 +81,28 @@ MyStruct(3.14)
 **NOTE** `RealFP` is the abstract type, and `Float` is the concrete type.
 This is just like in base Julia where `Integer` is the abstract type, and `Int` is the concrete type.
 
-## Aliases
+## [Types and Constants](@id types-constants)
 
 The aliases exported in this package are:
 
-- RealArray
-- RealVector
-- RealMatrix
-- IntegerArray
-- IntegerVector
-- IntegerMatrix
-- RealFP
-- Float
-- NTA_VERSION
+```@meta
+CurrentModule=NumericalTypeAliases
+````
+
+- Real-valued arrays:
+  - [`RealArray`](@ref): an arbitrary size array of floats.
+  - [`RealVector`](@ref): a 1-D vector of floats.
+  - [`RealMatrix`](@ref): a 2-D matrix of floats.
+- Integer-valued arrays:
+  - [`IntegerArray`](@ref): an arbitrary size array of integers.
+  - [`IntegerVector`](@ref): a 1-D vector of integers.
+  - [`IntegerMatrix`](@ref): a 2-D matrix of integers.
+- Single values:
+  - [`RealFP`](@ref): an abstract floating point type, same as AbstractFloat.
+  - [`Float`](@ref): a concrete floating point type, likely Float64 depending on the system.
+
+Furthermore, the package exports some convenience variables:
+
+- [`NTA_VERSION`](@ref): the version of `NumericalTypeAliases.jl` that is installed on the system.
+- [`NTA_ABSTRACT_TYPES`](@ref): a list of the abstract types in the package.
+- [`NTA_CONCRETE_TYPES`](@ref): a list of the concrete types in the package.
