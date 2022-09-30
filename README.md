@@ -141,15 +141,35 @@ This is just like in base Julia where `Integer` is the abstract type, and `Int` 
 
 The aliases exported in this package are:
 
-- RealArray
-- RealVector
-- RealMatrix
-- IntegerArray
-- IntegerVector
-- IntegerMatrix
-- RealFP
-- Float
-- NTA_VERSION
+- Real-valued arrays:
+  - [`RealArray`][1]: an arbitrary size array of floats.
+  - [`RealVector`][2]: a 1-D vector of floats.
+  - [`RealMatrix`][3]: a 2-D matrix of floats.
+- Integer-valued arrays:
+  - [`IntegerArray`][4]: an arbitrary size array of integers.
+  - [`IntegerVector`][5]: a 1-D vector of integers.
+  - [`IntegerMatrix`][6]: a 2-D matrix of integers.
+- Single values:
+  - [`RealFP`][7]: an abstract floating point type, same as AbstractFloat.
+  - [`Float`][8]: a concrete floating point type, likely Float64 depending on the system.
+
+Furthermore, the package exports some convenience variables:
+
+- [`NTA_VERSION`][9]: the version of `NumericalTypeAliases.jl` that is installed on the system.
+- [`NTA_ABSTRACT_TYPES`][10]: a list of the abstract types in the package.
+- [`NTA_CONCRETE_TYPES`][11]: a list of the concrete types in the package.
+
+[1]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealArray
+[2]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealVector
+[3]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealMatrix
+[4]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerArray
+[5]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerVector
+[6]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerMatrix
+[7]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealFP
+[8]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.Float
+[9]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_VERSION
+[10]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_ABSTRACT_TYPES
+[11]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_CONCRETE_TYPES
 
 ## Structure
 
