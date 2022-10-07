@@ -21,13 +21,13 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 [doc-status-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml
 
 [deps-img]: https://juliahub.com/docs/NumericalTypeAliases/deps.svg
-[deps-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We?t=2
+[deps-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Repio?t=2
 
 [version-img]: https://juliahub.com/docs/NumericalTypeAliases/version.svg
-[version-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We
+[version-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Repio
 
 [pkgeval-img]: https://juliahub.com/docs/NumericalTypeAliases/pkgeval.svg
-[pkgeval-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Sm0We
+[pkgeval-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Repio
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
 [docs-stable-url]: https://AP6YC.github.io/NumericalTypeAliases.jl/stable
