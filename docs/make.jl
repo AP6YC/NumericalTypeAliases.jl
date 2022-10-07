@@ -40,6 +40,7 @@ makedocs(
     authors="Sasha Petrenko",
 )
 
+# Deploy the documentation
 deploydocs(
     repo="github.com/AP6YC/NumericalTypeAliases.jl.git",
     devbranch="develop",

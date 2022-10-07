@@ -117,5 +117,5 @@ A combined list of abstract and concrete types exported in the `NumericalTypeAli
 """
 const NTA_TYPES = [
     NTA_CONCRETE_TYPES;
-    NTA_ABSTRACT_TYPES
+    NTA_ABSTRACT_TYPES;
 ]
