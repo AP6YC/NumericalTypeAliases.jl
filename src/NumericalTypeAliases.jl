@@ -39,6 +39,7 @@ export
     Float,
     NTA_VERSION,
     NTA_ABSTRACT_TYPES,
-    NTA_CONCRETE_TYPES
+    NTA_CONCRETE_TYPES,
+    NTA_TYPES
 
 end # module NumericalTypeAliases

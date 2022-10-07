@@ -106,3 +106,4 @@ Furthermore, the package exports some convenience variables:
 - [`NTA_VERSION`](@ref): the version of `NumericalTypeAliases.jl` that is installed on the system.
 - [`NTA_ABSTRACT_TYPES`](@ref): a list of the abstract types in the package.
 - [`NTA_CONCRETE_TYPES`](@ref): a list of the concrete types in the package.
+- [`NTA_TYPES`](@ref): a combined list of all of the types in the package.
