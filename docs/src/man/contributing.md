@@ -35,7 +35,7 @@ julia --project=.
     The above immediately activates the project when starting up Julia, but you may also separately startup the julia and activate the package with the interactive
     package manager via the `]` syntax:
 
-    ```julia
+    ```julia-repl
     julia
     julia> ]
     (@v1.8) pkg> activate .
@@ -44,7 +44,7 @@ julia --project=.
 
 You may run the package's unit tests after the above setup in Julia with
 
-```julia
+```julia-repl
 julia> using Pkg
 julia> Pkg.instantiate()
 julia> Pkg.test()
@@ -52,7 +52,7 @@ julia> Pkg.test()
 
 or interactively though the Julia package manager with
 
-```julia
+```julia-repl
 julia> ]
 (NumericalTypeAliases) pkg> instantiate
 (NumericalTypeAliases) pkg> test
@@ -90,6 +90,7 @@ NumericalTypeAliases
 ├── examples                // Source: example usage scripts.
 ├── src                     // Source: majority of source code.
 ├── test                    // Test: Unit, integration, and environment tests.
+├── .gitattributes          // Git: LFS settings, languages, etc.
 ├── .gitignore              // Git: .gitignore for the whole project.
 ├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
 ├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
