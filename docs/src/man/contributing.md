@@ -1,6 +1,6 @@
 # Contributing
 
-This page serves as the contribution guide for the `OptimalEstimation.jl` package.
+This page serves as the contribution guide for the `NumericalTypeAliases.jl` package.
 From top to bottom, the ways of contributing are:
 
 - [GitHub Issues:](@ref Issues) how to raise an issue with the project.
@@ -10,7 +10,7 @@ From top to bottom, the ways of contributing are:
 
 ## Issues
 
-The main point of contact is the [GitHub issues](https://github.com/AP6YC/OptimalEstimation.jl/issues) page for the project.
+The main point of contact is the [GitHub issues](https://github.com/AP6YC/NumericalTypeAliases.jl/issues) page for the project.
 This is the easiest way to contribute to the project, as any issue you find or request you have will be addressed there by the authors of the package.
 Depending on the issue, the authors will collaborate with you, and after making changes they will link a [pull request](@ref GitFlow) which addresses your concern or implements your proposed changes.
 
@@ -26,7 +26,7 @@ As a Julia package, development follows the usual procedure:
 For example, you can get the package and startup Julia with
 
 ```sh
-git clone git@github.com:AP6YC/OptimalEstimation.jl.git
+git clone git@github.com:AP6YC/NumericalTypeAliases.jl.git
 julia --project=.
 ```
 
@@ -38,8 +38,8 @@ julia --project=.
     ```julia
     julia
     julia> ]
-    (@v1.6) pkg> activate .
-    (OptimalEstimation) pkg>
+    (@v1.8) pkg> activate .
+    (NumericalTypeAliases) pkg>
     ```
 
 You may run the package's unit tests after the above setup in Julia with
@@ -54,19 +54,19 @@ or interactively though the Julia package manager with
 
 ```julia
 julia> ]
-(OptimalEstimation) pkg> instantiate
-(OptimalEstimation) pkg> test
+(NumericalTypeAliases) pkg> instantiate
+(NumericalTypeAliases) pkg> test
 ```
 
 ## GitFlow
 
-The `OptimalEstimation.jl` package follows the [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) git working model.
+The `NumericalTypeAliases.jl` package follows the [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) git working model.
 The [original post](https://nvie.com/posts/a-successful-git-branching-model/) by Vincent Driessen outlines this methodology quite well, while [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) has a good tutorial as well.
 In summary:
 
 1. Create a feature branch off of the `develop` branch with the name `feature/<my-feature-name>`.
 2. Commit your changes and push to this feature branch.
-3. When you are satisfied with your changes, initiate a [GitHub pull request](https://github.com/AP6YC/OptimalEstimation.jl/pulls) (PR) to merge the feature branch with `develop`.
+3. When you are satisfied with your changes, initiate a [GitHub pull request](https://github.com/AP6YC/NumericalTypeAliases.jl/pulls) (PR) to merge the feature branch with `develop`.
 4. If the unit tests pass, the feature branch will first be merged with develop and then be deleted.
 5. Releases will be periodically initiated from the `develop` branch and versioned onto the `master` branch.
 6. Immediate bug fixes circumvent this process through a `hotfix` branch off of `master`.
@@ -80,10 +80,10 @@ They are setup to be built and served in a separate branch `gh-pages` from the m
 
 ### Package Structure
 
-The `OptimalEstimation.jl` package has the following file structure:
+The `NumericalTypeAliases.jl` package has the following file structure:
 
 ```console
-OptimalEstimation
+NumericalTypeAliases
 ├── .github/workflows       // GitHub: workflows for testing and documentation.
 ├── docs                    // Docs: documentation for the module.
 │   └───src                 //      Documentation source files.
@@ -91,18 +91,28 @@ OptimalEstimation
 ├── src                     // Source: majority of source code.
 ├── test                    // Test: Unit, integration, and environment tests.
 ├── .gitignore              // Git: .gitignore for the whole project.
+├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
+├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
 ├── LICENSE                 // Doc: the license to the project.
 ├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
 └── README.md               // Doc: this document.
 ```
 
-### Optimal Estimation Module Workflow
+### NumericalTypeAliases Module Workflow
 
-TODO
+#### Objectives
 
-#### DataConfig
+The main objectives of the project are to:
 
-TODO
+- Provide convenient and human-legible type aliases for commonly used numerical types.
+- Do so with minimal overhead and dependencies.
+
+#### Structure
+
+The `NumericalTypeAliases.jl` package currently consists of only constant declarations of type aliases and lists that summarize them.
+One exception is the `NTA_VERSION` variable, which is computed at compile time and contains the version of `NumericalTypeAliases` that is installed.
+
+Future contributions of more advanced functionality are welcome, though the project objectives of light weight and minimal dependencies must still be adhered to.
 
 #### Type Aliases
 
@@ -134,4 +144,4 @@ This project does not yet test for the support of [arbitrary precision arithmeti
 
 ## Authors
 
-If you simply have suggestions for improvement, Sasha Petrenko (<sap625@mst.edu>) is the current developer and maintainer of the OptimalEstimation.jl package, so please feel free to reach out with thoughts and questions.
+If you simply have suggestions for improvement, Sasha Petrenko (<sap625@mst.edu>) is the current developer and maintainer of the NumericalTypeAliases.jl package, so please feel free to reach out with thoughts and questions.
