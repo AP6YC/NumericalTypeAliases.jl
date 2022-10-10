@@ -1,4 +1,4 @@
-# NumericalTypeAliases
+[![numericaltypes-header](docs/src/assets/header.png)][docs-dev-url]
 
 A collection of type aliases restricting to numerical for multiple dispatch.
 
@@ -44,17 +44,16 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 [issues-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/issues
 [contrib-url]: https://ap6yc.github.io/NumericalTypeAliases.jl/dev/man/contributing/
 
-- [NumericalTypeAliases](#numericaltypealiases)
-  - [Overview](#overview)
-  - [Installation](#installation)
-  - [Quickstart](#quickstart)
-  - [Aliases](#aliases)
-  - [Structure](#structure)
-  - [Contributing](#contributing)
-  - [History](#history)
-  - [Acknowledgements](#acknowledgements)
-    - [Authors](#authors)
-  - [License](#license)
+- [Overview](#overview)
+- [Installation](#installation)
+- [Quickstart](#quickstart)
+- [Aliases](#aliases)
+- [Structure](#structure)
+- [Contributing](#contributing)
+- [History](#history)
+- [Acknowledgements](#acknowledgements)
+  - [Authors](#authors)
+- [License](#license)
 
 ## Overview
 

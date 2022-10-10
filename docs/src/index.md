@@ -1,3 +1,7 @@
+![header](assets/header.png)
+
+---
+
 # NumericalTypeAliases.jl
 
 These pages serve as the official documentation for the NumericalTypeAliases.jl Julia package.

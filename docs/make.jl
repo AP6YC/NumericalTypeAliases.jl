@@ -39,11 +39,16 @@ using NumericalTypeAliases
 # BUILD DOCS
 # --------------------------------------------------------------------------- #
 
+assets = [
+    joinpath("assets", "favicon.ico")
+]
+
 # Make the documentation
 makedocs(
     modules=[NumericalTypeAliases],
     format=Documenter.HTML(
         prettyurls = get(ENV, "CI", nothing) == "true",
+        assets = assets,
     ),
     # format=Documenter.HTML(),
     pages=[
