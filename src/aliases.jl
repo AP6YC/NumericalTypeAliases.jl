@@ -1,8 +1,9 @@
 """
     aliases.jl
 
-Description:
-    Borrowed from StatsBase.jl: https://github.com/JuliaStats/StatsBase.jl
+# Description:
+This file contains all of the type aliases for the `NumericalTypeAliases` package.
+Most of these types are inspired by and borrowed from StatsBase.jl: https://github.com/JuliaStats/StatsBase.jl
 
 This defines a set of aliases that specify if:
     1. An array has an element type of float or integer.
@@ -10,7 +11,7 @@ This defines a set of aliases that specify if:
 """
 
 # --------------------------------------------------------------------------- #
-# Aliases
+# TYPE ALIASES
 # --------------------------------------------------------------------------- #
 #   **Taken from StatsBase.jl**
 #
@@ -23,52 +24,38 @@ This defines a set of aliases that specify if:
 
 # Real-numbered aliases
 """
-    RealArray{T<:Real, N} = AbstractArray{T, N}
-
 Abstract type for N-dimensional array of real, non-integered values.
 """
 const RealArray{T<:Real, N} = AbstractArray{T, N}
 
 """
-    RealVector{T<:Real} = AbstractArray{T, 1}
-
 Abstract type for 1-D vector of real, non-integered values.
 """
 const RealVector{T<:Real} = AbstractArray{T, 1}
 
 """
-    RealMatrix{T<:Real} = AbstractArray{T, 2}
-
 Abstract type for 2-D matrix of real, non-integered values.
 """
 const RealMatrix{T<:Real} = AbstractArray{T, 2}
 
 # Integered aliases
 """
-    IntegerArray{T<:Integer, N} = AbstractArray{T, N}
-
 Abstract type for N-dimensional array of whole-numbered integers.
 """
 const IntegerArray{T<:Integer, N} = AbstractArray{T, N}
 
 """
-    IntegerVector{T<:Integer} = AbstractArray{T, 1}
-
 Abstract type for 1-D vector of whole-numbered integers.
 """
 const IntegerVector{T<:Integer} = AbstractArray{T, 1}
 
 """
-    IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
-
 Abstract type for 2-D matrix of whole-numbered integers.
 """
 const IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
 
 # Specifically floating-point aliases
 """
-    RealFP = AbstractFloat
-
 Abstract type for a real floating-point number.
 This definition is provided for naming consistency in the package despite being equivalent to an AbstractFloat.
 """
@@ -76,8 +63,6 @@ const RealFP = AbstractFloat
 
 # System's largest native floating point variable
 """
-    Float
-
 Concrete type for the default available floating point value.
 This is likely Float64 on most systems.
 
@@ -86,19 +71,19 @@ Use carefully.
 """
 const Float = typeof(0.0)
 
-"""
-    NTA_CONCRETE_TYPES
+# --------------------------------------------------------------------------- #
+# CONSTANTS
+# --------------------------------------------------------------------------- #
 
-A list of NumericalTypeAliases' concrete types.
+"""
+A list of NumericalTypeAliases concrete types.
 """
 const NTA_CONCRETE_TYPES = [
     Float,
 ]
 
 """
-    NTA_ABSTRACT_TYPES
-
-A list of NumericalTypeAliases' abstract types.
+A list of `NumericalTypeAliases`` abstract types.
 """
 const NTA_ABSTRACT_TYPES = [
     RealArray,
@@ -108,4 +93,12 @@ const NTA_ABSTRACT_TYPES = [
     IntegerVector,
     IntegerMatrix,
     RealFP,
+]
+
+"""
+A combined list of abstract and concrete types exported in the `NumericalTypeAliases` package.
+"""
+const NTA_TYPES = [
+    NTA_CONCRETE_TYPES;
+    NTA_ABSTRACT_TYPES;
 ]
