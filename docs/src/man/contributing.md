@@ -101,21 +101,28 @@ NumericalTypeAliases
 
 ### NumericalTypeAliases Module Workflow
 
-#### Objectives
+This section outlines the way that the internals of the `NumericalTypeAliases.jl` package work for contributors.
+Contributing to the project requires knowing:
+
+- [The objectives](@ref objectives) of the project.
+- [The structure](@ref structure) of the internals, such as how the existing internals work.
+- The current [type aliases](@ref type-aliases) that are implemented.
+
+#### [Objectives](@id objectives)
 
 The main objectives of the project are to:
 
 - Provide convenient and human-legible type aliases for commonly used numerical types.
 - Do so with minimal overhead and dependencies.
 
-#### Structure
+#### [Structure](@id structure)
 
 The `NumericalTypeAliases.jl` package currently consists of only constant declarations of type aliases and lists that summarize them.
 One exception is the `NTA_VERSION` variable, which is computed at compile time and contains the version of `NumericalTypeAliases` that is installed.
 
 Future contributions of more advanced functionality are welcome, though the project objectives of light weight and minimal dependencies must still be adhered to.
 
-#### Type Aliases
+#### [Type Aliases](@id type-aliases)
 
 In the pursuit of an architecture-agnostic implementation (i.e., support for both 32- and 64-bit systems), type aliases and other special Julia types are used in this project.
 

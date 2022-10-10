@@ -182,7 +182,10 @@ NumericalTypeAliases
 │   └─── src                //      Documentation source files.
 ├── src                     // Source: majority of source code.
 ├── test                    // Test: Unit, integration, and environment tests.
+├── .gitattributes          // Git: LFS settings, languages, etc.
 ├── .gitignore              // Git: .gitignore for the whole project.
+├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
+├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
 ├── LICENSE                 // Doc: the license to the project.
 ├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
 └── README.md               // Doc: this document.
