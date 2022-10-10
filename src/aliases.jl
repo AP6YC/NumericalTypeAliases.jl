@@ -87,8 +87,6 @@ Use carefully.
 const Float = typeof(0.0)
 
 """
-    NTA_CONCRETE_TYPES
-
 A list of NumericalTypeAliases concrete types.
 """
 const NTA_CONCRETE_TYPES = [
@@ -96,8 +94,6 @@ const NTA_CONCRETE_TYPES = [
 ]
 
 """
-    NTA_ABSTRACT_TYPES
-
 A list of `NumericalTypeAliases`` abstract types.
 """
 const NTA_ABSTRACT_TYPES = [
@@ -111,8 +107,6 @@ const NTA_ABSTRACT_TYPES = [
 ]
 
 """
-    NTA_TYPES
-
 A combined list of abstract and concrete types exported in the `NumericalTypeAliases` package.
 """
 const NTA_TYPES = [
