@@ -1,5 +1,20 @@
+"""
+    make.jl
+
+# Description:
+Creates the documentation for the `NumericalTypeAliases.jl` package.
+"""
+
+# --------------------------------------------------------------------------- #
+# DEPENDENCIES
+# --------------------------------------------------------------------------- #
+
 using Documenter
 using Logging
+
+# --------------------------------------------------------------------------- #
+# LOAD NumericalTypeAliases
+# --------------------------------------------------------------------------- #
 
 # Get the current workind directory's base name
 current_dir = basename(pwd())
@@ -20,6 +35,10 @@ end
 # Include the package
 using NumericalTypeAliases
 
+# --------------------------------------------------------------------------- #
+# BUILD DOCS
+# --------------------------------------------------------------------------- #
+
 # Make the documentation
 makedocs(
     modules=[NumericalTypeAliases],
@@ -29,7 +48,7 @@ makedocs(
     # format=Documenter.HTML(),
     pages=[
         "Home" => "index.md",
-        "Tutorial" => [
+        "Manual" => [
             "Guide" => "man/guide.md",
             "Contributing" => "man/contributing.md",
             "Index" => "man/full-index.md"
@@ -39,6 +58,10 @@ makedocs(
     sitename="NumericalTypeAliases.jl",
     authors="Sasha Petrenko",
 )
+
+# --------------------------------------------------------------------------- #
+# DEPLOY DOCS
+# --------------------------------------------------------------------------- #
 
 # Deploy the documentation
 deploydocs(

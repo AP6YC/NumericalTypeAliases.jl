@@ -158,18 +158,20 @@ Furthermore, the package exports some convenience variables:
 - [`NTA_VERSION`][9]: the version of `NumericalTypeAliases.jl` that is installed on the system.
 - [`NTA_ABSTRACT_TYPES`][10]: a list of the abstract types in the package.
 - [`NTA_CONCRETE_TYPES`][11]: a list of the concrete types in the package.
+- ['NTA_TYPES][12]: a combined list of all abstract and concrete types in the package.
 
-[1]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealArray
-[2]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealVector
-[3]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealMatrix
-[4]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerArray
-[5]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerVector
-[6]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.IntegerMatrix
-[7]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.RealFP
-[8]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.Float
-[9]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_VERSION
-[10]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_ABSTRACT_TYPES
-[11]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index.html#NumericalTypeAliases.NTA_CONCRETE_TYPES
+[1]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealArray
+[2]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealVector
+[3]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealMatrix
+[4]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.IntegerArray
+[5]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.IntegerVector
+[6]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.IntegerMatrix
+[7]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealFP
+[8]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.Float
+[9]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_VERSION
+[10]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_ABSTRACT_TYPES
+[11]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_CONCRETE_TYPES
+[12]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_TYPES
 
 ## Structure
 
@@ -182,7 +184,10 @@ NumericalTypeAliases
 │   └─── src                //      Documentation source files.
 ├── src                     // Source: majority of source code.
 ├── test                    // Test: Unit, integration, and environment tests.
+├── .gitattributes          // Git: LFS settings, languages, etc.
 ├── .gitignore              // Git: .gitignore for the whole project.
+├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
+├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
 ├── LICENSE                 // Doc: the license to the project.
 ├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
 └── README.md               // Doc: this document.
@@ -205,7 +210,8 @@ Patch versions are for bug fixes, minor versions are for backward-compatible cha
 ## History
 
 - 9/29/2022 - Begin project.
-- 9/30/2022 - Submit to JuliaHub
+- 9/30/2022 - Submit v0.1.0 to JuliaHub.
+- 10/10/2022 - v0.2.0 release.
 
 ## Acknowledgements
 
