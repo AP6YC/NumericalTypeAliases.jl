@@ -14,8 +14,8 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 | :------------: |
 | [![DOI][zenodo-img]][zenodo-url] |
 
-[zenodo-img]: https://zenodo.org/badge/DOI/10.5281/zenodo.5748453.svg
-[zenodo-url]: https://doi.org/10.5281/zenodo.5748453
+[zenodo-img]: https://zenodo.org/badge/543317478.svg
+[zenodo-url]: https://zenodo.org/badge/latestdoi/543317478
 
 [doc-status-img]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml/badge.svg
 [doc-status-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml
