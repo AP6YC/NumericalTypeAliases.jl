@@ -11,7 +11,15 @@ Credits:
 - MLJ.jl: https://github.com/alan-turing-institute/MLJ.jl
 """
 
+# --------------------------------------------------------------------------- #
+# DEPENDENCIES
+# --------------------------------------------------------------------------- #
+
 using Pkg
+
+# --------------------------------------------------------------------------- #
+# CONSTANTS
+# --------------------------------------------------------------------------- #
 
 """
 A constant that contains the version of the installed NumericalTypeAliases.jl package.

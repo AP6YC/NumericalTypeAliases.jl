@@ -1,8 +1,9 @@
 """
     aliases.jl
 
-Description:
-    Borrowed from StatsBase.jl: https://github.com/JuliaStats/StatsBase.jl
+# Description:
+This file contains all of the type aliases for the `NumericalTypeAliases` package.
+Most of these types are inspired by and borrowed from StatsBase.jl: https://github.com/JuliaStats/StatsBase.jl
 
 This defines a set of aliases that specify if:
     1. An array has an element type of float or integer.
@@ -10,7 +11,7 @@ This defines a set of aliases that specify if:
 """
 
 # --------------------------------------------------------------------------- #
-# Aliases
+# TYPE ALIASES
 # --------------------------------------------------------------------------- #
 #   **Taken from StatsBase.jl**
 #
@@ -69,6 +70,10 @@ Because a Float64 in Julia is the equivalent of a double in other languages (whi
 Use carefully.
 """
 const Float = typeof(0.0)
+
+# --------------------------------------------------------------------------- #
+# CONSTANTS
+# --------------------------------------------------------------------------- #
 
 """
 A list of NumericalTypeAliases concrete types.
