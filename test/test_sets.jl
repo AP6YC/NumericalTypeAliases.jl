@@ -72,3 +72,10 @@ end
     @test local_struct.local_float isa Float
     @test local_struct.local_float isa RealFP
 end
+
+@testset "Type Lists" begin
+    # Test that every entry in the lists is a valid type
+    for my_type in NTA_TYPES
+        @test my_type isa Type
+    end
+end

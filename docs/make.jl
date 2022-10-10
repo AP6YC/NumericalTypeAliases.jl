@@ -29,7 +29,7 @@ makedocs(
     # format=Documenter.HTML(),
     pages=[
         "Home" => "index.md",
-        "Tutorial" => [
+        "Manual" => [
             "Guide" => "man/guide.md",
             "Contributing" => "man/contributing.md",
             "Index" => "man/full-index.md"
