@@ -143,6 +143,9 @@ const IntegerMatrix{T<:Integer} = AbstractArray{T, 2}
 
 # Specifically floating-point aliases
 const RealFP = Union{Float32, Float64}
+
+# Concrete floating-point alias
+const Float = typeof(0.0)
 ```
 
 In this package, data samples are always `Real`-valued while class labels are integered.
