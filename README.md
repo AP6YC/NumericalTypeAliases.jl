@@ -7,18 +7,11 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 | **Stable Docs**  | **Dev Docs** | **Testing Status** | **Coverage** |
 |:----------------:|:------------:|:----------------:|:------------:|
 | [![Stable][docs-stable-img]][docs-stable-url] | [![Dev][docs-dev-img]][docs-dev-url]| [![Build Status][ci-img]][ci-url] | [![Codecov][codecov-img]][codecov-url] |
-| **Docs Build** | **JuliaHub Status** | **Dependents** | **Release** |
-| [![Documentation][doc-status-img]][doc-status-url] | [![pkgeval][pkgeval-img]][pkgeval-url] | [![deps][deps-img]][deps-url] | [![version][version-img]][version-url] |
-
-| **Zenodo DOI** |
-| :------------: |
-| [![DOI][zenodo-img]][zenodo-url] |
+| **Release** | **JuliaHub Status** | **Dependents** | **Zenodo DOI** |
+| [![version][version-img]][version-url] | [![pkgeval][pkgeval-img]][pkgeval-url] | [![deps][deps-img]][deps-url] | [![DOI][zenodo-img]][zenodo-url] |
 
 [zenodo-img]: https://zenodo.org/badge/543317478.svg
 [zenodo-url]: https://zenodo.org/badge/latestdoi/543317478
-
-[doc-status-img]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml/badge.svg
-[doc-status-url]: https://github.com/AP6YC/NumericalTypeAliases.jl/actions/workflows/Documentation.yml
 
 [deps-img]: https://juliahub.com/docs/NumericalTypeAliases/deps.svg
 [deps-url]: https://juliahub.com/ui/Packages/NumericalTypeAliases/Repio?t=2
