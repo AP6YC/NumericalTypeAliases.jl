@@ -128,7 +128,7 @@ MyStruct(3.14)
 
 **NOTE** `RealFP` is the abstract type, and `Float` is the concrete type.
 This is just like in base Julia where `Integer` is the abstract type, and `Int` is the concrete type.
-This `Float` type is provided for semantic convenience, though beware that it has been the [subject of great debate](https://discourse.julialang.org/t/float-type-like-int-type/1164/20).
+This `Float` type is provided for semantic convenience, though beware that it has been the [subject of great debate](https://discourse.julialang.org/t/float-type-like-int-type/1164).
 
 ## Aliases
 
