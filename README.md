@@ -41,7 +41,6 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 - [Installation](#installation)
 - [Quickstart](#quickstart)
 - [Aliases](#aliases)
-- [Structure](#structure)
 - [Contributing](#contributing)
 - [History](#history)
 - [Acknowledgements](#acknowledgements)
@@ -165,26 +164,6 @@ Furthermore, the package exports some convenience variables:
 [10]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_ABSTRACT_TYPES
 [11]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_CONCRETE_TYPES
 [12]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_TYPES
-
-## Structure
-
-The following file tree summarizes the project structure:
-
-```console
-NumericalTypeAliases
-├── .github/workflows       // GitHub: workflows for testing and documentation.
-├── docs                    // Docs: documentation for the module.
-│   └─── src                //      Documentation source files.
-├── src                     // Source: majority of source code.
-├── test                    // Test: Unit, integration, and environment tests.
-├── .gitattributes          // Git: LFS settings, languages, etc.
-├── .gitignore              // Git: .gitignore for the whole project.
-├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
-├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
-├── LICENSE                 // Doc: the license to the project.
-├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
-└── README.md               // Doc: this document.
-```
 
 ## Contributing
 
