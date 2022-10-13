@@ -41,11 +41,11 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 - [Installation](#installation)
 - [Quickstart](#quickstart)
 - [Aliases](#aliases)
-- [Structure](#structure)
 - [Contributing](#contributing)
-- [History](#history)
+- [FAQs](#faqs)
 - [Acknowledgements](#acknowledgements)
   - [Authors](#authors)
+  - [History](#history)
 - [License](#license)
 
 ## Overview
@@ -128,6 +128,7 @@ MyStruct(3.14)
 
 **NOTE** `RealFP` is the abstract type, and `Float` is the concrete type.
 This is just like in base Julia where `Integer` is the abstract type, and `Int` is the concrete type.
+This `Float` type is provided for semantic convenience, though beware that it has been the [subject of great debate](https://discourse.julialang.org/t/float-type-like-int-type/1164).
 
 ## Aliases
 
@@ -165,26 +166,6 @@ Furthermore, the package exports some convenience variables:
 [11]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_CONCRETE_TYPES
 [12]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.NTA_TYPES
 
-## Structure
-
-The following file tree summarizes the project structure:
-
-```console
-NumericalTypeAliases
-├── .github/workflows       // GitHub: workflows for testing and documentation.
-├── docs                    // Docs: documentation for the module.
-│   └─── src                //      Documentation source files.
-├── src                     // Source: majority of source code.
-├── test                    // Test: Unit, integration, and environment tests.
-├── .gitattributes          // Git: LFS settings, languages, etc.
-├── .gitignore              // Git: .gitignore for the whole project.
-├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
-├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
-├── LICENSE                 // Doc: the license to the project.
-├── Project.toml            // Julia: the Pkg.jl dependencies of the project.
-└── README.md               // Doc: this document.
-```
-
 ## Contributing
 
 If you have a question or concern, please raise an [issue][issues-url].
@@ -199,11 +180,36 @@ If unit tests pass and the changes are beneficial, these PRs are merged into `de
 3. The project follows the [Semantic Versioning](https://semver.org/) convention of `major.minor.patch` incremental versioning numbers.
 Patch versions are for bug fixes, minor versions are for backward-compatible changes, and major versions are for new and incompatible usage changes.
 
-## History
+## FAQs
 
-- 9/29/2022 - Begin project.
-- 9/30/2022 - Submit v0.1.0 to JuliaHub.
-- 10/10/2022 - v0.2.0 release.
+You may have some questions....
+
+---
+
+> Why does this package exist?
+
+I have been duplicating this code across several different Julia projects, so I decided to finally modularize it like a big kid.
+
+---
+
+> Why not use [`ScientificTypes.jl`](https://github.com/JuliaAI/ScientificTypes.jl)?
+
+This package may very well evolve to convert its type aliases into an extended `ScientificTypes` convention.
+But today is not that day.
+
+---
+
+> Why is the testing coverage at 0%?
+
+The Julia unit testing coverage methods don't seem to concern themselves with constant aliases of types, which is the only thing that this package contains.
+Despite the fact that these types are tested with various assertions, these sadly don't register as covered lines.
+
+---
+
+> Why the over-the-top retro logo?
+
+This package is so small, simple, and downright boring that it had might as well have a flashy logo to be any kind of memorable whatsoever.
+Also, retro is always in style (contradiction intended).
 
 ## Acknowledgements
 
@@ -211,6 +217,12 @@ Patch versions are for bug fixes, minor versions are for backward-compatible cha
 
 This package is developed and maintained by [Sasha Petrenko](https://github.com/AP6YC) with sponsorship by the [Applied Computational Intelligence Laboratory (ACIL)](https://acil.mst.edu/). This project is supported by grants from the [Night Vision Electronic Sensors Directorate](https://c5isr.ccdc.army.mil/inside_c5isr_center/nvesd/), the [DARPA Lifelong Learning Machines (L2M) program](https://www.darpa.mil/program/lifelong-learning-machines), [Teledyne Technologies](http://www.teledyne.com/), and the [National Science Foundation](https://www.nsf.gov/).
 The material, findings, and conclusions here do not necessarily reflect the views of these entities.
+
+### History
+
+- 9/29/2022 - Begin project.
+- 9/30/2022 - Submit v0.1.0 to JuliaHub.
+- 10/10/2022 - v0.2.0 release.
 
 ## License
 
