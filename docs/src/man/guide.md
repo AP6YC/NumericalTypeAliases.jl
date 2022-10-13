@@ -88,7 +88,7 @@ The aliases exported in this package are:
 
 ```@meta
 CurrentModule=NumericalTypeAliases
-````
+```
 
 - Real-valued arrays:
   - [`RealArray`](@ref): an arbitrary size array of floats.
