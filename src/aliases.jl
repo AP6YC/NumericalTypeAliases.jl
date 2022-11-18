@@ -76,14 +76,14 @@ const Float = typeof(0.0)
 # --------------------------------------------------------------------------- #
 
 """
-A list of NumericalTypeAliases concrete types.
+A list of all `NumericalTypeAliases` concrete types.
 """
 const NTA_CONCRETE_TYPES = [
     Float,
 ]
 
 """
-A list of `NumericalTypeAliases`` abstract types.
+A list of all `NumericalTypeAliases` abstract types.
 """
 const NTA_ABSTRACT_TYPES = [
     RealArray,
@@ -96,7 +96,7 @@ const NTA_ABSTRACT_TYPES = [
 ]
 
 """
-A combined list of abstract and concrete types exported in the `NumericalTypeAliases` package.
+A combined list of all abstract and concrete types exported in the `NumericalTypeAliases` package.
 """
 const NTA_TYPES = [
     NTA_CONCRETE_TYPES;

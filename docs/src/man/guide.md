@@ -4,7 +4,7 @@ The use the `NumericalTypeAliases.jl` package, you should know:
 
 - [How to install the package](@ref installation)
 - [Usage basics](@ref usage)
-- [Types and constants](@ref types-constants)
+- [Aliases](@ref types-constants)
 
 ## [Installation](@id installation)
 
@@ -80,14 +80,15 @@ MyStruct(3.14)
 
 **NOTE** `RealFP` is the abstract type, and `Float` is the concrete type.
 This is just like in base Julia where `Integer` is the abstract type, and `Int` is the concrete type.
+This `Float` type is provided for semantic convenience, though beware that it has been the [subject of great debate](https://discourse.julialang.org/t/float-type-like-int-type/1164).
 
-## [Types and Constants](@id types-constants)
+## [Aliases](@id types-constants)
 
 The aliases exported in this package are:
 
 ```@meta
 CurrentModule=NumericalTypeAliases
-````
+```
 
 - Real-valued arrays:
   - [`RealArray`](@ref): an arbitrary size array of floats.

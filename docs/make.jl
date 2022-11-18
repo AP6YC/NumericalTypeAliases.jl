@@ -9,12 +9,17 @@ Creates the documentation for the `NumericalTypeAliases.jl` package.
 # DEPENDENCIES
 # --------------------------------------------------------------------------- #
 
-using Documenter
-using Logging
+using
+    Documenter,
+    Logging,
+    Pkg
 
 # --------------------------------------------------------------------------- #
-# LOAD NumericalTypeAliases
+# SETUP
 # --------------------------------------------------------------------------- #
+
+# Fix GR headless errors
+ENV["GKSwstype"] = "100"
 
 # Get the current workind directory's base name
 current_dir = basename(pwd())
