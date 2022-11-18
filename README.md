@@ -203,6 +203,7 @@ But today is not that day.
 
 The Julia unit testing coverage methods don't seem to concern themselves with constant aliases of types, which is the only thing that this package contains.
 Despite the fact that these types are tested with various assertions, these sadly don't register as covered lines.
+Full coverage reporting is planned for this package in the future, but today is not that day.
 
 ---
 
