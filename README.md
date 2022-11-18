@@ -1,6 +1,6 @@
 [![numericaltypes-header](docs/src/assets/header.png)][docs-dev-url]
 
-A collection of type aliases restricting to numerical for multiple dispatch.
+A collection of simple type aliases restricting to numerical vectors or matrices for multiple dispatch.
 
 Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 
