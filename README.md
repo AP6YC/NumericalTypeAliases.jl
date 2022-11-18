@@ -1,6 +1,6 @@
 [![numericaltypes-header](docs/src/assets/header.png)][docs-dev-url]
 
-A collection of type aliases restricting to numerical for multiple dispatch.
+A collection of simple type aliases restricting to numerical vectors or matrices for multiple dispatch.
 
 Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 
@@ -151,7 +151,7 @@ Furthermore, the package exports some convenience variables:
 - [`NTA_VERSION`][9]: the version of `NumericalTypeAliases.jl` that is installed on the system.
 - [`NTA_ABSTRACT_TYPES`][10]: a list of the abstract types in the package.
 - [`NTA_CONCRETE_TYPES`][11]: a list of the concrete types in the package.
-- ['NTA_TYPES`][12]: a combined list of all abstract and concrete types in the package.
+- [`NTA_TYPES`][12]: a combined list of all abstract and concrete types in the package.
 
 [1]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealArray
 [2]: https://AP6YC.github.io/NumericalTypeAliases.jl/dev/man/full-index/#NumericalTypeAliases.RealVector
@@ -203,6 +203,7 @@ But today is not that day.
 
 The Julia unit testing coverage methods don't seem to concern themselves with constant aliases of types, which is the only thing that this package contains.
 Despite the fact that these types are tested with various assertions, these sadly don't register as covered lines.
+Full coverage reporting is planned for this package in the future, but today is not that day.
 
 ---
 
