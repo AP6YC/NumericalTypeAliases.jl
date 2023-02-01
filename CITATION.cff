@@ -12,8 +12,8 @@ authors:
     affiliation: "Missouri University of Science and Technology"
 
 # Repository title and descriptors
-title: "AP6YC/NumericalTypeAliases.jl"
-abstract: "This software is a Julia package for function dispatching on numerical types."
+title: "NumericalTypeAliases.jl: A Julia Package for Function Dispatch on Numerical Types"
+abstract: "This software is a Julia package for function dispatch on numerical types."
 keywords:
   - "Julia"
   - "Aliases"

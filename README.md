@@ -46,7 +46,8 @@ Please read the [documentation][docs-dev-url] for detailed usage and tutorials.
 - [Acknowledgements](#acknowledgements)
   - [Authors](#authors)
   - [History](#history)
-- [License](#license)
+  - [License](#license)
+  - [Citation](#citation)
 
 ## Overview
 
@@ -225,6 +226,21 @@ The material, findings, and conclusions here do not necessarily reflect the view
 - 9/30/2022 - Submit v0.1.0 to JuliaHub.
 - 10/10/2022 - v0.2.0 release.
 
-## License
+### License
 
 This software is openly maintained by the ACIL of the Missouri University of Science and Technology under the [MIT License](LICENSE).
+
+### Citation
+
+This project has a [citation file](CITATION.cff) file that generates citation information for the package, which can be accessed at the "Cite this repository button" under the "About" section of the GitHub page.
+
+You may also cite this repository with the following BibTeX entry:
+
+```bibtex
+@article{NumericalTypeAliases,
+  doi = {10.5281/zenodo.7183296},
+  url = {https://doi.org/10.5281/zenodo.7183296},
+  author = {Sasha Petrenko},
+  title = {NumericalTypeAliases.jl: A Julia Package for Function Dispatch on Numerical Types},
+}
+```
