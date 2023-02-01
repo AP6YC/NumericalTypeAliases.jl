@@ -92,6 +92,7 @@ NumericalTypeAliases
 ├── test                    // Test: Unit, integration, and environment tests.
 ├── .gitattributes          // Git: LFS settings, languages, etc.
 ├── .gitignore              // Git: .gitignore for the whole project.
+├── CITATION.cff            // Doc: the citation settings for the package.
 ├── CODE_OF_CONDUCT.md      // Doc: the code of conduct for contributors.
 ├── CONTRIBUTING.md         // Doc: contributing guide (points to this page).
 ├── LICENSE                 // Doc: the license to the project.
