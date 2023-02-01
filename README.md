@@ -237,7 +237,7 @@ This project has a [citation file](CITATION.cff) file that generates citation in
 You may also cite this repository with the following BibTeX entry:
 
 ```bibtex
-@article{NumericalTypeAliases,
+@misc{NumericalTypeAliases,
   doi = {10.5281/zenodo.7183296},
   url = {https://doi.org/10.5281/zenodo.7183296},
   author = {Sasha Petrenko},
