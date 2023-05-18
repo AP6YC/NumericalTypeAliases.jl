@@ -38,7 +38,7 @@ julia --project=.
     ```julia-repl
     julia
     julia> ]
-    (@v1.8) pkg> activate .
+    (@v1.9) pkg> activate .
     (NumericalTypeAliases) pkg>
     ```
 

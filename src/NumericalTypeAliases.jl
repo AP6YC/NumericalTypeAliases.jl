@@ -9,7 +9,7 @@ Install and import the package interactively with
 
 ```julia-repl
 julia> ]
-(@v1.8) pkg> add NumericalTypeAliases
+(@v1.9) pkg> add NumericalTypeAliases
 ```
 
 Then develop your package with numerical aliases such as
