@@ -15,7 +15,6 @@ using Logging
 end
 
 @testset "Types" begin
-
     @info "System word size: $(Sys.WORD_SIZE)"
 
     # Test that the real types work as expected
