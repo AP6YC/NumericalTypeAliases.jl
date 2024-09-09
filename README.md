@@ -1,4 +1,4 @@
-[![numericaltypes-header](docs/src/assets/header.png)][docs-dev-url]
+[![numericaltypes-header](https://github.com/AP6YC/FileStorage/blob/main/NumericalTypeAliases/header.png?raw=true)][docs-stable-url]
 
 A collection of simple type aliases restricting to numerical vectors or matrices for multiple dispatch.
 
